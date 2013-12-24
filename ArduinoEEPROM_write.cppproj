@@ -5,7 +5,7 @@
     <ProjectVersion>6.1</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
     <ProjectGuid>{07b459b4-8d76-4638-bc6d-a459ba2d616b}</ProjectGuid>
-    <avrdevice>atmega32u4</avrdevice>
+    <avrdevice>atmega328p</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
     <Language>CPP</Language>
@@ -28,15 +28,15 @@
     <BootSegment>0</BootSegment>
     <AsfFrameworkConfig>
       <framework-data>
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.3.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.3.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -50,7 +50,7 @@
         <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>__AVR_ATmega32U4__</Value>
+            <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=105</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
@@ -59,7 +59,71 @@
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
             <Value>D:\applications\arduino-1.0.5\hardware\arduino\cores\arduino</Value>
-            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo</Value>
+            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\standard</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary\utility</Value>
+            <Value>D:\projects_arduino\libraries\Blink</Value>
+            <Value>D:\projects_arduino\libraries\Blink\utility</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\DHT</Value>
+            <Value>D:\projects_arduino\libraries\DHT\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307</Value>
+            <Value>D:\projects_arduino\libraries\DS1307\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new\utility</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx\utility</Value>
+            <Value>D:\projects_arduino\libraries\Encoder</Value>
+            <Value>D:\projects_arduino\libraries\Encoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter\utility</Value>
+            <Value>D:\projects_arduino\libraries\HashMap</Value>
+            <Value>D:\projects_arduino\libraries\HashMap\utility</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient\utility</Value>
+            <Value>D:\projects_arduino\libraries\IRremote</Value>
+            <Value>D:\projects_arduino\libraries\IRremote\utility</Value>
+            <Value>D:\projects_arduino\libraries\Keypad</Value>
+            <Value>D:\projects_arduino\libraries\Keypad\utility</Value>
+            <Value>D:\projects_arduino\libraries\LedControl</Value>
+            <Value>D:\projects_arduino\libraries\LedControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix\utility</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261\utility</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD\utility</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave\utility</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\RTClib</Value>
+            <Value>D:\projects_arduino\libraries\RTClib\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer\utility</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595\utility</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization\utility</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper\utility</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction\utility</Value>
+            <Value>D:\projects_arduino\libraries\TButton</Value>
+            <Value>D:\projects_arduino\libraries\TButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne\utility</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\Esplora</Value>
@@ -106,7 +170,7 @@
         <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcccpp.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>__AVR_ATmega32U4__</Value>
+            <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=105</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
@@ -115,7 +179,71 @@
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
             <Value>D:\applications\arduino-1.0.5\hardware\arduino\cores\arduino</Value>
-            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo</Value>
+            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\standard</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary\utility</Value>
+            <Value>D:\projects_arduino\libraries\Blink</Value>
+            <Value>D:\projects_arduino\libraries\Blink\utility</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\DHT</Value>
+            <Value>D:\projects_arduino\libraries\DHT\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307</Value>
+            <Value>D:\projects_arduino\libraries\DS1307\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new\utility</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx\utility</Value>
+            <Value>D:\projects_arduino\libraries\Encoder</Value>
+            <Value>D:\projects_arduino\libraries\Encoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter\utility</Value>
+            <Value>D:\projects_arduino\libraries\HashMap</Value>
+            <Value>D:\projects_arduino\libraries\HashMap\utility</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient\utility</Value>
+            <Value>D:\projects_arduino\libraries\IRremote</Value>
+            <Value>D:\projects_arduino\libraries\IRremote\utility</Value>
+            <Value>D:\projects_arduino\libraries\Keypad</Value>
+            <Value>D:\projects_arduino\libraries\Keypad\utility</Value>
+            <Value>D:\projects_arduino\libraries\LedControl</Value>
+            <Value>D:\projects_arduino\libraries\LedControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix\utility</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261\utility</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD\utility</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave\utility</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\RTClib</Value>
+            <Value>D:\projects_arduino\libraries\RTClib\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer\utility</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595\utility</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization\utility</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper\utility</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction\utility</Value>
+            <Value>D:\projects_arduino\libraries\TButton</Value>
+            <Value>D:\projects_arduino\libraries\TButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne\utility</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\Esplora</Value>
@@ -166,26 +294,23 @@
     </ToolchainSettings>
     <VisualMicroSettings>
       <VisualMicroSettings>
-        <arduino.board.name>leonardo</arduino.board.name>
-        <arduino.board.desc>Arduino Leonardo</arduino.board.desc>
-        <arduino.board.property_bag>name=Arduino Leonardo
-upload.protocol=avr109
-upload.maximum_size=28672
-upload.speed=57600
-upload.disable_flushing=true
+        <arduino.board.name>uno</arduino.board.name>
+        <arduino.board.desc>Arduino Uno</arduino.board.desc>
+        <arduino.board.property_bag>name=Arduino Uno
+upload.protocol=arduino
+upload.maximum_size=32256
+upload.speed=115200
 bootloader.low_fuses=0xff
-bootloader.high_fuses=0xd8
-bootloader.extended_fuses=0xcb
-bootloader.path=caterina
-bootloader.file=Caterina-Leonardo.hex
+bootloader.high_fuses=0xde
+bootloader.extended_fuses=0x05
+bootloader.path=optiboot
+bootloader.file=optiboot_atmega328.hex
 bootloader.unlock_bits=0x3F
-bootloader.lock_bits=0x2F
-build.mcu=atmega32u4
+bootloader.lock_bits=0x0F
+build.mcu=atmega328p
 build.f_cpu=16000000L
-build.vid=0x2341
-build.pid=0x8036
 build.core=arduino
-build.variant=leonardo
+build.variant=standard
 runtime.ide.path=D:\applications\arduino-1.0.5
 build.system.path=D:\applications\arduino-1.0.5\hardware\arduino\system
 software=ARDUINO
@@ -194,22 +319,14 @@ vm.core.include=arduino.h
 vm.boardsource.path=D:\applications\arduino-1.0.5\hardware\arduino
 vm.boardsource.name=boards.txt
 vm.platformname.name=
-compiler.path=D:\applications\arduino-1.0.5\hardware\tools\avr\bin\
-includes= -I"D:\applications\arduino-1.0.5\hardware\arduino\cores\arduino"  -I"D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo"  -I"D:\applications\arduino-1.0.5\libraries\EEPROM" 
-build.path=C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo
-build.project_name=ArduinoEEPROM_read
-build.variant.path=D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo
-archive_file=core.a
-object_file="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo\EEPROM\EEPROM.cpp.o"
-source_file="D:\applications\arduino-1.0.5\libraries\EEPROM\EEPROM.cpp"
-object_files="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo\ArduinoEEPROM_read.cpp.o" "C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo\EEPROM\EEPROM.cpp.o" 
 </arduino.board.property_bag>
-        <arduino.build.mcu>atmega32u4</arduino.build.mcu>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
         <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
         <arduino.build.core>arduino</arduino.build.core>
-        <arduino.upload.protocol>avr109</arduino.upload.protocol>
-        <arduino.upload.speed>57600</arduino.upload.speed>
-        <arduino.upload.maximum_size>28672</arduino.upload.maximum_size>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>115200</arduino.upload.speed>
+        <arduino.upload.maximum_size>32256</arduino.upload.maximum_size>
+        <arduino.upload.port>COM5</arduino.upload.port>
       </VisualMicroSettings>
     </VisualMicroSettings>
   </PropertyGroup>
@@ -224,7 +341,7 @@ object_files="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPRO
         <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>__AVR_ATmega32U4__</Value>
+            <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=105</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
@@ -233,7 +350,71 @@ object_files="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPRO
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
             <Value>D:\applications\arduino-1.0.5\hardware\arduino\cores\arduino</Value>
-            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo</Value>
+            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\standard</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary\utility</Value>
+            <Value>D:\projects_arduino\libraries\Blink</Value>
+            <Value>D:\projects_arduino\libraries\Blink\utility</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\DHT</Value>
+            <Value>D:\projects_arduino\libraries\DHT\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307</Value>
+            <Value>D:\projects_arduino\libraries\DS1307\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new\utility</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx\utility</Value>
+            <Value>D:\projects_arduino\libraries\Encoder</Value>
+            <Value>D:\projects_arduino\libraries\Encoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter\utility</Value>
+            <Value>D:\projects_arduino\libraries\HashMap</Value>
+            <Value>D:\projects_arduino\libraries\HashMap\utility</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient\utility</Value>
+            <Value>D:\projects_arduino\libraries\IRremote</Value>
+            <Value>D:\projects_arduino\libraries\IRremote\utility</Value>
+            <Value>D:\projects_arduino\libraries\Keypad</Value>
+            <Value>D:\projects_arduino\libraries\Keypad\utility</Value>
+            <Value>D:\projects_arduino\libraries\LedControl</Value>
+            <Value>D:\projects_arduino\libraries\LedControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix\utility</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261\utility</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD\utility</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave\utility</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\RTClib</Value>
+            <Value>D:\projects_arduino\libraries\RTClib\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer\utility</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595\utility</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization\utility</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper\utility</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction\utility</Value>
+            <Value>D:\projects_arduino\libraries\TButton</Value>
+            <Value>D:\projects_arduino\libraries\TButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne\utility</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\Esplora</Value>
@@ -280,7 +461,7 @@ object_files="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPRO
         <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcccpp.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>__AVR_ATmega32U4__</Value>
+            <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=105</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
@@ -289,7 +470,71 @@ object_files="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPRO
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
             <Value>D:\applications\arduino-1.0.5\hardware\arduino\cores\arduino</Value>
-            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo</Value>
+            <Value>D:\applications\arduino-1.0.5\hardware\arduino\variants\standard</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary</Value>
+            <Value>D:\projects_arduino\libraries\ArduinoCronLibrary\utility</Value>
+            <Value>D:\projects_arduino\libraries\Blink</Value>
+            <Value>D:\projects_arduino\libraries\Blink\utility</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton</Value>
+            <Value>D:\projects_arduino\libraries\ClickButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl</Value>
+            <Value>D:\projects_arduino\libraries\ConsumerControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\DHT</Value>
+            <Value>D:\projects_arduino\libraries\DHT\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307</Value>
+            <Value>D:\projects_arduino\libraries\DS1307\utility</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new</Value>
+            <Value>D:\projects_arduino\libraries\DS1307new\utility</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx</Value>
+            <Value>D:\projects_arduino\libraries\EEPROMEx\utility</Value>
+            <Value>D:\projects_arduino\libraries\Encoder</Value>
+            <Value>D:\projects_arduino\libraries\Encoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter</Value>
+            <Value>D:\projects_arduino\libraries\FreqCounter\utility</Value>
+            <Value>D:\projects_arduino\libraries\HashMap</Value>
+            <Value>D:\projects_arduino\libraries\HashMap\utility</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient</Value>
+            <Value>D:\projects_arduino\libraries\HttpClient\utility</Value>
+            <Value>D:\projects_arduino\libraries\IRremote</Value>
+            <Value>D:\projects_arduino\libraries\IRremote\utility</Value>
+            <Value>D:\projects_arduino\libraries\Keypad</Value>
+            <Value>D:\projects_arduino\libraries\Keypad\utility</Value>
+            <Value>D:\projects_arduino\libraries\LedControl</Value>
+            <Value>D:\projects_arduino\libraries\LedControl\utility</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix</Value>
+            <Value>D:\projects_arduino\libraries\MaxMatrix\utility</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261</Value>
+            <Value>D:\projects_arduino\libraries\Mcp4261\utility</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD</Value>
+            <Value>D:\projects_arduino\libraries\MenuLCD\utility</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave</Value>
+            <Value>D:\projects_arduino\libraries\ModBus_Slave\utility</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton</Value>
+            <Value>D:\projects_arduino\libraries\MomentaryButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder</Value>
+            <Value>D:\projects_arduino\libraries\RotaryEncoder\utility</Value>
+            <Value>D:\projects_arduino\libraries\RTClib</Value>
+            <Value>D:\projects_arduino\libraries\RTClib\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand</Value>
+            <Value>D:\projects_arduino\libraries\SerialCommand\utility</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer</Value>
+            <Value>D:\projects_arduino\libraries\SerialObjectTransfer\utility</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595</Value>
+            <Value>D:\projects_arduino\libraries\ShiftRegister595\utility</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization</Value>
+            <Value>D:\projects_arduino\libraries\SimpleSerialization\utility</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper</Value>
+            <Value>D:\projects_arduino\libraries\StringHelper\utility</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction</Value>
+            <Value>D:\projects_arduino\libraries\TaskAction\utility</Value>
+            <Value>D:\projects_arduino\libraries\TButton</Value>
+            <Value>D:\projects_arduino\libraries\TButton\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay</Value>
+            <Value>D:\projects_arduino\libraries\TimeRelay\utility</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne</Value>
+            <Value>D:\projects_arduino\libraries\TimerOne\utility</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer</Value>
+            <Value>D:\projects_arduino\libraries\YalerEthernetServer\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\EEPROM\utility</Value>
             <Value>D:\applications\arduino-1.0.5\libraries\Esplora</Value>
@@ -340,26 +585,23 @@ object_files="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPRO
     </ToolchainSettings>
     <VisualMicroSettings>
       <VisualMicroSettings>
-        <arduino.board.name>leonardo</arduino.board.name>
-        <arduino.board.desc>Arduino Leonardo</arduino.board.desc>
-        <arduino.board.property_bag>name=Arduino Leonardo
-upload.protocol=avr109
-upload.maximum_size=28672
-upload.speed=57600
-upload.disable_flushing=true
+        <arduino.board.name>uno</arduino.board.name>
+        <arduino.board.desc>Arduino Uno</arduino.board.desc>
+        <arduino.board.property_bag>name=Arduino Uno
+upload.protocol=arduino
+upload.maximum_size=32256
+upload.speed=115200
 bootloader.low_fuses=0xff
-bootloader.high_fuses=0xd8
-bootloader.extended_fuses=0xcb
-bootloader.path=caterina
-bootloader.file=Caterina-Leonardo.hex
+bootloader.high_fuses=0xde
+bootloader.extended_fuses=0x05
+bootloader.path=optiboot
+bootloader.file=optiboot_atmega328.hex
 bootloader.unlock_bits=0x3F
-bootloader.lock_bits=0x2F
-build.mcu=atmega32u4
+bootloader.lock_bits=0x0F
+build.mcu=atmega328p
 build.f_cpu=16000000L
-build.vid=0x2341
-build.pid=0x8036
 build.core=arduino
-build.variant=leonardo
+build.variant=standard
 runtime.ide.path=D:\applications\arduino-1.0.5
 build.system.path=D:\applications\arduino-1.0.5\hardware\arduino\system
 software=ARDUINO
@@ -368,22 +610,14 @@ vm.core.include=arduino.h
 vm.boardsource.path=D:\applications\arduino-1.0.5\hardware\arduino
 vm.boardsource.name=boards.txt
 vm.platformname.name=
-compiler.path=D:\applications\arduino-1.0.5\hardware\tools\avr\bin\
-includes= -I"D:\applications\arduino-1.0.5\hardware\arduino\cores\arduino"  -I"D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo"  -I"D:\applications\arduino-1.0.5\libraries\EEPROM" 
-build.path=C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo
-build.project_name=ArduinoEEPROM_read
-build.variant.path=D:\applications\arduino-1.0.5\hardware\arduino\variants\leonardo
-archive_file=core.a
-object_file="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo\EEPROM\EEPROM.cpp.o"
-source_file="D:\applications\arduino-1.0.5\libraries\EEPROM\EEPROM.cpp"
-object_files="C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo\ArduinoEEPROM_read.cpp.o" "C:\Users\Miroslav\AppData\Local\VMicro\Arduino\Builds\ArduinoEEPROM_read\leonardo\EEPROM\EEPROM.cpp.o" 
 </arduino.board.property_bag>
-        <arduino.build.mcu>atmega32u4</arduino.build.mcu>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
         <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
         <arduino.build.core>arduino</arduino.build.core>
-        <arduino.upload.protocol>avr109</arduino.upload.protocol>
-        <arduino.upload.speed>57600</arduino.upload.speed>
-        <arduino.upload.maximum_size>28672</arduino.upload.maximum_size>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>115200</arduino.upload.speed>
+        <arduino.upload.maximum_size>32256</arduino.upload.maximum_size>
+        <arduino.upload.port>COM5</arduino.upload.port>
       </VisualMicroSettings>
     </VisualMicroSettings>
   </PropertyGroup>
